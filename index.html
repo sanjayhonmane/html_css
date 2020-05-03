@@ -1,90 +1,148 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment2 Solution</title>
 
-	<style>
+<style>
 
-		div.data2 p{
-			position: absolute;
-			color: black;
-			border: solid black;
-			height: 200px;
-			width: 350px;
-			margin: 50px;
-			padding: 0px;
-			margin-top: 200px;
-			background-color: #999999;
-		}
-		div.data p{
-			position: absolute;
-			color: black;
-			border: solid black;
-			height: 200px;
-			width: 350px;
-			margin-left: 550px;
-			margin-top: 200px;
-			background-color: #999999;
-			
-		}
-		div.data1 p{
-			position: absolute;
-			color: black;
-			border: solid black;
-			height: 200px;
-			width: 350px;
-			margin-left: 1100px;
-			margin-top: 200px;
-			background-color: #999999;
-		}
-		div.data h6{
-			position: absolute;
-			border:solid black;
-			color: black;
-			height: 40px;
-			width: 100px;
-			margin-left: 800px;
-			margin-top: 200px;
-			background-color: #FF5733;
-		}
-		div.data1 h5{
-			position: absolute;
-			border: solid black;
-			color: black;
-			height: 40px;
-			width: 100px;
-			margin-left: 1350px;
-			margin-top: 200px;
-			background-color: #FFC300;
-		}
-		div.data2 h4{
-			position: absolute;
-			color: black;
-			border:solid black;
-			height: 40px;
-			width: 100px;
-			margin-left: 300px;
-			margin-top: 200px;
-			background-color: pink;
-		}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  text-align: center;
+  color:black;
+}
+.row{
+		width:100%;
+	}
+@media(min-width: 992px){
+	.col-lg-3{
+		float: left;
+		width:30%;
+		margin: 10px;
+		position: relative;
+	}
+	#content1{
+		background-color: #999999;
+		border:1px solid black;
+		padding:35px;
+
+	}
+	#content2{
+		background-color: #999999; 
+		border:1px solid black; 
+		padding:35px;
+	}
+	#content3{
+		background-color: #999999; 
+		border:1px solid black; 
+		padding:35px;
+	}
+	#dummy{
+		position:absolute;
+		top:0;
+		right:0;
+		background-color: green;
+	}
+}
+@media(min-width: 768px) and (max-width: 991px){
+	
+	.col-md-6, .col-md-12{
+		float: left;
+		position: relative;
+		margin-top: 20px;
 		
-	</style>
+	}
+	.col-md-6{
+	width:40%;
+	margin-left:30px;
+	margin-right: 30px;	
+	}
+	.col-md-12 {
+    width: 100%;
+  }
+	#content1{
+		background-color: #AB7272;
+		border:1px solid black;
+		padding-top: 30px;
+
+	}
+	#content2{
+		background-color: #A07CAF; 
+		border:1px solid black; 
+		padding-top: 30px;
+	}
+	#content3{
+		background-color: #508789; 
+		border:1px solid black; 
+		padding-top: 30px;
+		clear:both;
+	}
+	
+	#dummy{
+		position:absolute;
+		top:0;
+		right:0;
+		background-color: green;
+	}
+}
+	@media(min-width: 10px) and (max-width: 767px){
+		.col-sm-12{
+		float: left;
+		width:100%;
+		position: relative;
+		margin-bottom: 30px;
+	}
+	#content1{
+		background-color: #AB7272;
+		border:1px solid black;
+		padding:35px;
+
+	}
+	#content2{
+		background-color: #A07CAF; 
+		border:1px solid black; 
+		padding:35px;
+	}
+	#content3{
+		background-color: #508789; 
+		border:1px solid black; 
+		padding:35px;
+	}
+	#dummy{
+		position:absolute;
+		top:0;
+		right:0;
+		background-color: green;
+	}
+
+	}
+
+  </style>
+
 </head>
 <body>
-	<h1 align="center"><br>Our Menu</h1>
-	<div class="data2">
-     <p align="margin-left"><br><br><br><br>Chicken is the most common type of poultry in the world. Owing to the relative ease and low cost of raising them in comparison to animals such as cattle or hogs, chickens have become prevalent throughout the cuisine of cultures around the world, and their meat has been variously adapted to regional tastes. Chicken.<br><br><br><br></p>
-     <h4 align="center"><br> Chicken </h4>
-    </div>
-     <div class="data">
-     	<p align="margin-left"><br><br><br><br>  Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times.[1] Beef is a source of high-quality protein and nutrients leave I recover my acadamic locess thanking you<br><br><br><br></p>
-     	<h6 align="center"><br>Beef </h6>
-     </div>
-     <div class="data1">
-   			<p align="margin-left"><br><br><br><br>Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, vegetables, and occasionally tropical fruits. <br><br><br><br></p>
-     
-     	<h5 align="center"><br>Sushi</h5>
-     </div>
+<h1>Our Menu</h1>
+<div class="row">
+<div class="col-lg-3 col-md-6 col-sm-12">
+<p id="content1">Chicken is the most common type of poultry in the world. Owing to the relative ease and low cost of raising them in comparison to animals such as cattle or hogs, chickens have become prevalent throughout.</p>
+<p id=dummy>Chicken</p>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-12">
+<p id="content2">Beef is the culinary name for meat from cattle, particularly skeletal muscle. Humans have been eating beef since prehistoric times.[1] Beef is a source of high-quality protein and nutrients leave I recover my acadamic locess thanking you</p>
+<p id="dummy">Beef</p>
+</div>
+<div class="col-lg-3 col-md-12 col-sm-12">
+<p id="content3">Sushi is a Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanying a variety of ingredients, such as seafood, vegetables, and occasionally tropical fruits.</p>
+<p id="dummy">Sushi</p>
+</div>
+
 </body>
 </html>
-
